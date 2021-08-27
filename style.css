@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-color: #333;
+    margin: 0;
+    padding: 50px;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 70px;
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+.header h1 {
+    font-size: 45px;
+}
+
+.header img {
+    height: 250px;
+    border-radius: 50%;
+    right: 300px;
+
+}
+
+.centercolumn {
+    float: left;
+    width: 1418px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 50px;
+}
+
+.card h2 {
+    background-color: #333;
+    color: white;
+    width: 500px;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-left: 100px;
+    line-height: 2.7;
+}
+
+.card p {
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer img:hover {
+    cursor: pointer;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+    .centercolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
